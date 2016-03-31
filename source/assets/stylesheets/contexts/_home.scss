@@ -1,6 +1,17 @@
 .dirigible-picker {
+  @include pie-clearfix;
   @include divider-top;
   border-style: dashed;
+  li {
+    @include breakpoint($breakpoint-m) {
+      @include column(4);
+    }
+    &:last-of-type {
+      @include breakpoint($breakpoint-m) {
+        @include last;
+      }
+    }
+  }
 }
 
 .dirigiblog {
