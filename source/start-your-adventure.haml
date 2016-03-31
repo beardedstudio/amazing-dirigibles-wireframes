@@ -1,0 +1,32 @@
+---
+title: "Start Your Dirigible Adventure"
+---
+
+%h2.page-title Start Your Adventure
+%form.start-adventure{:action => "/choose-dirigible.html"}
+  %fieldset
+    .input
+      %label.visually-hidden{:for => "choose_location"} Choose Location:
+      %select{:name => "choose_location", :id => "choose_location"}
+        %option{:value => ""} Choose Location
+        %option{:value => "pittsburgh"} Pittsburgh, PA
+        %option{:value => "columbia"} Columbia, SC
+        %option{:value => "sanjose"} San Jose, CA
+
+    .two-up
+      .date-wrapper.input
+        %label.visually-hidden{:for => "date_pickup"} Pick Up Date:
+        %input.date{:type => "text", :id => "date_pickup", :name => "date_pickup", :placeholder => "Pick Up Date"}
+
+      .date-wrapper.input
+        %label.visually-hidden{:for => "date_dropoff"} Drop Off Date:
+        %input.date{:type => "text", :id => "date_dropoff", :name => "date_dropoff", :placeholder => "Drop Off Date"}
+
+    .input
+      %label.visually-hidden{:for => "licensed"} Do you have a dirigible license?
+      %select{:name => "licensed", :id => "licensed"}
+        %option{:value => ""} Are you licensed?
+        %option{:value => "yes"} Yes, I have a dirigible license
+        %option{:value => "no"} No, I do not have a dirigible license
+
+  %button{:type => "submit"} Let's Go!

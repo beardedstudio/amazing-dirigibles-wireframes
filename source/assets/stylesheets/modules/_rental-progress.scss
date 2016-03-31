@@ -1,0 +1,26 @@
+.rental-progress {
+  ol {
+    counter-reset: progress-counter;
+    display: flex;
+    list-style-type: none;
+    margin-left: 1.25em;
+  }
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 25%;
+
+    &:before {
+      content: counter(progress-counter);
+      counter-increment: progress-counter;
+      text-align: center;
+      width: 100%;
+    }
+
+    span {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

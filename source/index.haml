@@ -1,0 +1,32 @@
+---
+title: Dirigible Rentals | Finneous T. Clouderhoof's Amazing Dirigibles
+---
+
+%h2.page-title
+  Take an Adventure
+= simple_format lorem.paragraph
+= simple_format lorem.paragraph
+
+%section.dirigible-picker
+  %h3 Select Your Dirigible
+  %ul
+    %li Dupuy De L&#244;me
+    %li Jean-Pierre Blanchard
+    %li Sch&#252;tte-Lanz SL1
+
+%section.dirigiblog
+  %h3 Dirigiblog
+  %article.post
+    %h4.post-title
+      = lorem.words(3).capitalize
+    %time.datetime
+      August 10, 1910
+    = simple_format lorem.paragraph
+    %a{:href => "#"} Read More
+  %article.post
+    %h4.post-title
+      = lorem.words(3).capitalize
+    %time.datetime
+      August 8, 1910
+    = simple_format lorem.paragraph
+    %a{:href => "#"} Read More

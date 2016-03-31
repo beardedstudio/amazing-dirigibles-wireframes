@@ -1,0 +1,6 @@
+.callout {
+  &:not(:last-of-type) {
+    @include divider-bottom;
+    border-style: dashed;
+  }
+}
